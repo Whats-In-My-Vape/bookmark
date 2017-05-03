@@ -1,0 +1,34 @@
+<form class="ui inverted violet center aligned stacked segment form" action="/about/comments" method="POST">
+    <div class="two fields">
+     <div class="field">
+      <label>Alias</label>
+      <input placeholder="Alias" type="text" name="alias">
+    </div>
+    <div class="field">
+      <label>Criticism</label>
+      <input placeholder="Criticism" type="text" name="criticism">
+    </div>
+    </div>
+    <button class="ui inverted purple submit button">Add comment</button>
+    </form>
+    <table class="ui inverted violet table">
+  <thead>
+    <tr class="center aligned">
+      <th>alias</th>
+      <th>criticism</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each comments}}
+      <tr>
+        <td>
+          {{alias}}
+        </td>
+        <td>
+          {{criticism}}
+       </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+</section>

@@ -1,0 +1,15 @@
+{{#each bookmarks}}
+  <section class="ui inverted violet padded center aligned segment">
+    <h2 class="ui header">
+      {{title}}
+    </h2>
+    <a href="/bookmark/{{id}}" class="ui icon button">
+          <i class="icon folder open"></i>
+    </a>
+       <a href="/dashboard/deletebookmark/{{id}}" class="ui icon button">
+      <i class="icon trash"></i>
+    </a>
+     <p>Total bookmarks in this list: {{link.length}}</p>
+  </section>
+{{/each}}
+
